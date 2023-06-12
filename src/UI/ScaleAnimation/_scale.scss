@@ -1,0 +1,56 @@
+.form_scale {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    font-size: 18px;
+    margin-top: 30px;
+
+    .scale_text_wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .scale_text {
+        color: white;
+        font-weight: 400;
+    }
+
+    .scale_percent {
+        color: rgba(255, 255, 255, 0.85);
+        font-weight: 600;
+    }
+
+    .scale_fill {
+        height: 6px;
+        background-color: rgba(255, 255, 255, 0.7);
+        border: 1px solid #FFFFFF;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 10px;
+        border-radius: 3px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            width: 27px;
+            height: 27px;
+            background-color: #42A9ED;
+        }
+
+        transition: width 3s ease;
+    }
+
+}
+
+@media (max-width: 1050px) {
+
+    .form_wrapper {
+
+        .form_scale {
+            display: none;
+        }
+    }
+}

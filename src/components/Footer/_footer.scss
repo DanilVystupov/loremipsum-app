@@ -1,0 +1,114 @@
+footer {
+    background: #3D4050;
+    width: 100%;
+    padding: 30px 0;
+    flex-wrap: wrap;
+}
+
+.footer_wrapper {
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+
+    .brand_wrap {
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+
+        .brand_text {
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+        }
+    }
+
+    .social_wrap {
+        display: flex;
+        justify-content: space-around;
+        width: 38%;
+
+        .title {
+            display: flex;
+            align-items: center;
+
+            span {
+                margin-left: 11px;
+            }
+        }
+    }
+
+    .contacts_wrap {
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+
+        .title {
+            display: flex;
+            align-items: center;
+
+            a {
+                margin-left: 13px;
+                cursor: pointer;
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .footer_wrapper {
+
+        .brand_wrap {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            width: 100%;
+
+            .brand_text {
+                display: flex;
+                align-items: center;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 16px;
+            }
+
+            span {
+                display: none;
+            }
+        }
+
+        .social_wrap {
+            width: 100%;
+            margin-top: 15px;
+            margin-bottom: 35px;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .contacts_wrap {
+            width: 100%;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .slash {
+            display: none;
+        }
+    }
+
+}
+
+@media (max-width: 590px) {
+    .footer_wrapper {
+
+        .social_wrap,
+        .contacts_wrap {
+            justify-content: start;
+        }
+    }
+}

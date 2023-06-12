@@ -1,0 +1,142 @@
+.intro {
+    width: 100%;
+    background-image: url('images/intro_image.png');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 193px;
+}
+
+.intro_title {
+
+    h1 {
+        width: 70%;
+        padding-top: 103px;
+        font-size: 48px;
+        text-transform: uppercase;
+        margin-bottom: 80px;
+
+
+        span {
+            color: rgba(62, 156, 220, 1);
+        }
+    }
+}
+
+.intro_subtitle {
+
+    width: 70%;
+    font-size: 20px;
+    margin-bottom: 80px;
+
+    h2 {
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-weight: 400;
+    }
+
+    p:not(:last-child) {
+        margin-bottom: 5px;
+    }
+}
+
+
+.intro_button_wrap {
+
+    button {
+        text-transform: uppercase;
+        padding: 15px 31px;
+        font-size: 13px;
+        font-weight: 400;
+        border: 1px solid #6F6D7B;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        color: white;
+        background-color: rgba(62, 156, 220, 1);
+        border: 1px solid #FFFFFF;
+    }
+
+    button:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .intro {
+        padding-bottom: 70px;
+    }
+
+    .intro_title {
+
+        h1 {
+            width: 100%;
+            font-size: 40px;
+        }
+    }
+
+    .intro_subtitle {
+        width: 100%;
+        font-size: 18px;
+
+    }
+
+    .intro_button_wrap {
+        gap: 15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 590px) {
+
+    .intro {
+        background-image: url('./images/order-background.png');
+        background-color: rgba(16, 16, 29, 0.9);
+    }
+
+    .intro_title {
+
+        color: white;
+
+        h1 {
+            font-size: 35px;
+        }
+    }
+
+    .intro_subtitle {
+        color: white;
+    }
+
+    .intro_button_wrap {
+        button {
+            background-color: rgb(62, 156, 220);
+        }
+    }
+}
+
+@media (max-width: 420px) {
+
+    .intro_title {
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+}
+
+@media (max-width: 340px) {
+
+    .intro_title {
+
+        h1 {
+            font-size: 26px;
+        }
+    }
+}

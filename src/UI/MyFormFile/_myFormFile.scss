@@ -1,0 +1,36 @@
+.form_file {
+    margin-top: 30px;
+    width: 30%;
+
+    label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        color: #272733;
+        background: #FFFFFF;
+        width: 100%;
+        padding: 3% 24%;
+        font-weight: 600;
+        font-size: 15px;
+        border: 2px solid transparent;
+        border-radius: 3px;
+
+        .icon {
+            width: 17px;
+            height: 20px;
+            background-image: url('./icon/icon-file.svg');
+            background-size: contain;
+            margin-right: 10px;
+            background-repeat: no-repeat;
+        }
+    }
+
+    label:hover {
+        border: 2px solid #3E9CDC;
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+}
